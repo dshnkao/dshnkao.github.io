@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Dennis' Homepage</title>
 	<style type="text/css">
-		body {
+		#text {
 			margin: 40px auto;
 			max-width: 650px;
 			line-height: 1.6;
@@ -31,29 +31,40 @@
 			text-align: center;
 			display: inline-block;
 		}
+		
+		canvas {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			z-index: -9999;
+		}
+		
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+			margin: 0px;
+			border: 0;
+			overflow: hidden;
+		}
 	</style>
 </head>
 
 <body>
-	<header>
-		<h1>Dennis Kao</h1>
-		<aside>This is a randomly random website</aside>
-	</header>
-	<div id="icon">
-		<a href="https://github.com/dshnkao" target="_blank">
-			<img src="assets/github.svg" />
-		</a>
+	<!---
+	<div id="text">
+		<header>
+			<h1>Dennis Kao</h1>
+			<aside>This is a randomly random website</aside>
+		</header>
+		<div id="icon"><a href="https://github.com/dshnkao" target="_blank"><img src="assets/github.svg" /></a></div>
+		<div id="icon"><a href="https://linkedin.com/in/dennis-kao" target="_blank"><img src="assets/linkedin.svg" /></a></div>
+		<div id="icon"><a href="https://twitter.com/dshkao" target="_blank"><img src="assets/twitter.svg" /></a></div>
+		<hr>
 	</div>
-	<div id="icon">
-		<a href="https://linkedin.com/in/dennis-kao" target="_blank">
-			<img src="assets/linkedin.svg" />
-		</a>
-	</div>
-	<div id="icon">
-		<a href="https://twitter.com/dshkao" target="_blank">
-			<img src="assets/twitter.svg" />
-		</a>
-	</div>
+	-->
+	<canvas id="myCanvas"></canvas>
+	<script src="script.js"></script>
 </body>
 
 </html>
