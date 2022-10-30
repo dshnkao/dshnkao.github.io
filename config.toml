@@ -3,6 +3,8 @@ base_url = "https://denniskao.com"
 
 title = "Dennis Kao's Blog"
 
+output_dir = "docs"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
