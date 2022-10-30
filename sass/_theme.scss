@@ -1,8 +1,8 @@
 $foreground: #222222;
-$background: #ffffff;
+$background: #FFFFFF;
 $secondary: gray;
 $tertiary: #dddddd;
-$accent: #3d3cba;
+$accent: #437291;
 
 $foreground-dark: #eeeeee;
 $background-dark: #161616;
@@ -20,10 +20,12 @@ $accent-dark: #959bf0;
 
     a, a:link, a:visited {
         color: $accent;
+        text-decoration: none;
     }
 
     a:hover {
-        color: darken($accent, 30%);
+        // color: darken($accent, 30%);
+        color: #e76f00;
     }
 
     blockquote {
